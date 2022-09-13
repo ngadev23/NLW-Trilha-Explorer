@@ -1,0 +1,11 @@
+*Aula Prática High Speed
+
+##Tags:
+
+<h> (heading 1,2,3...)cabeçalho e tamanho-->
+<p> é parágrafo
+
+
+
+
+
