@@ -24,6 +24,14 @@ body{
 main * { 
 
     border: 1px solid red;
+    
+}
+
+/*alterar fonte de ts corpo da página de acordo com o add no html*/
+body * {
+
+    font-family: 'Inter', sans-serif;
+    line-height: 160%; /*espaçamento entre as linhas*/
 }
 
 /*o Main é o pai dos elementos q estão dentro dele, logo as config colocadas aqui serão aplicadas a td q estiver dentro do main*/
@@ -31,5 +39,23 @@ main{
     max-width: 580px; /*largura máxima*/
     width: 90%; /*limite da largura da tela*/
     margin: auto; /*margem dos 90% dos elementos na tela*/
+}
 
+/*Alterar cor de fontes de tds as seções/ O section referencia tds as seções*/
+section{
+    color: white;
+}
+
+/*altera td h2 das seções*/
+section h2 {
+    /*font-weight: 900;
+    font-size: 24px; >> o próprio navegador trouxe esta formatação*/ 
+    letter-spacing: -0.47px;
+}
+
+section p{
+    /*font-weight: 400;
+    font-size: 16px; o próprio navegador trouxe esta formatação*/
+    letter-spacing: -0.18px;
+    color: #A1A1AA;
 }

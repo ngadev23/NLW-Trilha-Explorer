@@ -1,0 +1,6 @@
+<header> 
+            <div>
+                <img src="https://github.com/ngadev23.png" 
+                alt="Foto de Natália Gomes"/> <!--inserir imagem no header/src é o local da imagem/ alt é texto alternativo-->  
+            </div>
+        </header> 
