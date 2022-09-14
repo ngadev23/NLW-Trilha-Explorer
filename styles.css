@@ -1,0 +1,35 @@
+
+/*resetando configurações automáticas do navegador*/
+*{ 
+    margin: 0;  /*tira tds as margens*/
+    padding: 0; /*a caixa sempre vai manter o que for definido no main*/
+    box-sizing: border-box; /*tira as bordar acrescentadas pelo navegador*/
+}
+
+/*a lista não tem estilo*/
+ul{
+    list-style: none; 
+}
+
+/*configurações de Background da página*/
+body{
+    background-image: url(./assets/bg.jpg); /*função para informar onde se encontra a imagem*/
+    background-position: top center; /*centraliza a imagem no topo*/
+    background-size: 100%; /*a imagem fica 100% da tela e não no seu tamanho original*/
+    background-repeat: no-repeat; /*não permite q a imagem se repita na tela*/
+    background-color: #121214; /*altera cor de fundo da pagina*/  
+}
+
+/*coloca borda em todos os elementos do main*/
+main * { 
+
+    border: 1px solid red;
+}
+
+/*o Main é o pai dos elementos q estão dentro dele, logo as config colocadas aqui serão aplicadas a td q estiver dentro do main*/
+main{ 
+    max-width: 580px; /*largura máxima*/
+    width: 90%; /*limite da largura da tela*/
+    margin: auto; /*margem dos 90% dos elementos na tela*/
+
+}
