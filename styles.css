@@ -32,16 +32,43 @@ body * {
     line-height: 160%; /*espaçamento entre as linhas*/
 }
 
+header {
+    padding-top: 32px; /*colocar espaço acima da imagem do header>>> tbm pode usar o padding-top*/
+    height: calc(120px + 32px);
+}
+
+header div { /*config do div do header - td header segue a config*/
+    width: 120px;
+    margin: auto;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100% );
+    border-radius: 50%;
+
+    display: flex; /*alinha a borda com a imagem*/
+    padding: 4px;   /*preenche a borda*/
+    transition: transform .7s; /*aplica a transição do transforme em 3s*/
+}
+
+/*CSS de transição*/
+header div:hover{
+    transform: scale(1.1); /*aumenta a imagem do header qd passar o mouse em cima*/
+
+}
+
+header img {
+    border-radius: 50%;
+    width: 100%;  
+}
+
 /*o Main é o pai dos elementos q estão dentro dele, logo as config colocadas aqui serão aplicadas a td q estiver dentro do main*/
 main{ 
     max-width: 580px; /*largura máxima*/
     width: 90%; /*limite da largura da tela*/
-    margin: auto; /*margem dos 90% dos elementos na tela*/
+    margin: 32px auto; /*a info 1 é referente ao topo e a base e o auto é a largura */
 
     display: grid; /*para desbloquear p gap para ter os espaços entre as seções*/
     gap: 24px;  
 
-    margin-top: 32px;
+   
 }
 
 /*Alterar cor de fontes de tds as seções/ O section referencia tds as seções*/
@@ -85,6 +112,15 @@ section ul{
     margin-top: 24px; /*espaço entre as imagens e os textos de tds as uls*/
 }
 
+
+section ul li {
+    transition: transform .3s;
+}
+
+section ul li:hover { /*aumenta as imagens qd passa o mouse em cima*/
+    transform:scale(1.1);
+}
+
 /*referencia a imagem da ul de games*/
 .games-list img{ 
     width: 90px;
@@ -94,16 +130,72 @@ section ul{
 .channel-list img{
     width: 70px;
     border-radius: 50%;
+    border: 1px solid #443E54;
 }
 
 .Social-list img{
     width: 33px;
 }
 
-/*header img{
-    border-radius: 50%;
-    width: 120px;  
-}*/
+/*ANIMATION*/
+
+/*1. Definir animação*/
+
+/*aplicar a animação*/
+
+header div {
+    animation: fromTop .7s .4s backwards; /*informa o nome da animação criada abaixo e coloca a duração da animação*/
+}
+
+
+main section {
+        animation: fromBottom .7s backwards; /*backwards mantém tds as propriedades definidas na animação*/
+}
+
+main section:nth-child(1) { /*pega o primeiro filho da seção*/
+    animation-delay: 0;
+}
+
+main section:nth-child(2) { /*pega o segundo filho da seção*/
+    animation-delay: .4s;
+}
+
+main section:nth-child(3) { /*pega o terceiro filho da seção*/
+    animation-delay: .8s;
+}
+
+
+
+@keyframes fromTop /*nome da animação q escolho*/ {
+    from {
+        opacity: 0;
+        transform: translateY(-30px) /* joga a imagem de cima pra baixo em 30px (o espaço entre a img e a borda de cima é 32px*/
+    }
+
+    to {
+        transform: translateY(0); /*movimenta o header de cima para baixo até a posição atual q é 0*/
+        opacity: 1;
+    }
+}
+
+@keyframes fromBottom {
+
+    from {
+        opacity: 0;
+        transform: translateX(-30px) /* joga a imagem de baixo pra cima em 30px (o espaço entre a img e a borda de cima é 32px*/
+    }
+
+    to {
+        transform: translateX(0); /*movimenta o header de cima para baixo até a posição atual q é 0*/
+        opacity: 1;
+    }
+}
+    
+
+
+
+
+
 
 
     
