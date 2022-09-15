@@ -1,6 +1,6 @@
 # NLW-Trilha-Explorer
 &nbsp;
-##Trilha Explorer NLW
+## Trilha Explorer NLW
 
 **Todas as anotações sobre código estão nos próprios códigos como comentários**
 
