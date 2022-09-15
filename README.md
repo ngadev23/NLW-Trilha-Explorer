@@ -5,4 +5,6 @@ Trilha Explorer NLW
 
 [**Index**](https://github.com/ngadev23/NLW-Trilha-Explorer/blob/main/index.html)
 
+[**Styles.CSS**](https://github.com/ngadev23/NLW-Trilha-Explorer/blob/main/styles.css)
+
 
