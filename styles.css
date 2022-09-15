@@ -182,11 +182,11 @@ main section:nth-child(3) { /*pega o terceiro filho da seção*/
 
     from {
         opacity: 0;
-        transform: translateX(-30px) /* joga a imagem de baixo pra cima em 30px (o espaço entre a img e a borda de cima é 32px*/
+        transform: translateY(-30px) /* joga a imagem de baixo pra cima em 30px (o espaço entre a img e a borda de cima é 32px*/
     }
 
     to {
-        transform: translateX(0); /*movimenta o header de cima para baixo até a posição atual q é 0*/
+        transform: translateY(0); /*movimenta o header de cima para baixo até a posição atual q é 0*/
         opacity: 1;
     }
 }
