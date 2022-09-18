@@ -1,12 +1,23 @@
-# NLW-Trilha-Explorer
+# NLW eSports 
 
-&nbsp;
-## Trilha Explorer NLW
+![preview](./.github/preview.png)
 
-**Todas as anotações sobre código estão nos próprios códigos como comentários**
+> Trilha Explorer
 
-[**Index**](https://github.com/ngadev23/NLW-Trilha-Explorer/blob/main/index.html)
+Projeto construído no evento Next Level Week da Rocketseat
 
-[**Styles.CSS**](https://github.com/ngadev23/NLW-Trilha-Explorer/blob/main/styles.css)
+[🔗**Clique aqui para acessar**](https://ngadev23.github.io/NLW-Trilha-Explorer/)
+
+
+
+## Tecnologias 💻
+
+- HTML
+- CSS
+- Git e Github
+
+## Contato 📲
+
+gfin.adm@gmail.com
 
 
